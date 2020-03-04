@@ -19,7 +19,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3M2-Md-lLf"/>
                     <connections>
-                        <segue destination="Vaw-nF-E0h" kind="push" id="oFR-tc-pc8"/>
+                        <segue destination="Vaw-nF-E0h" kind="show" id="oFR-tc-pc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -80,7 +80,7 @@
                         <outlet property="passwordTextField" destination="hDV-re-2T6" id="jtx-vd-IuR"/>
                         <outlet property="rememberMeSwitch" destination="MlH-lq-wKU" id="7bm-8B-ggS"/>
                         <outlet property="usernameTextField" destination="tGQ-0t-Dor" id="6dP-UM-Ezj"/>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="customer_entry" id="y2f-me-aW6"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="customer_entry" id="y2f-me-aW6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahm-XM-EOR" sceneMemberID="firstResponder"/>
@@ -135,7 +135,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="awo-gB-N9G"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Nbl-14-mFi"/>
+                    <navigationItem key="navigationItem" id="Nbl-14-mFi">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="nD6-CB-dSf"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="OV0-ol-Gn4" id="5Za-n5-YEb"/>
                         <outlet property="studentIdTextField" destination="C65-bO-AoV" id="y3E-uH-PeO"/>
