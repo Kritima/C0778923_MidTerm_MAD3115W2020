@@ -21,6 +21,15 @@ class LoginViewController: UIViewController {
     }
 
 
+    func userRememberCheck(){
+        if let email = UserDefaults.standard.string(forKey: "userEmail"){
+            usernameTextField.text = email
+            if let pass = UserDefaults.standard.string(forKey: "pass"){
+                passwordTextField.text = pass
+                rememberMeSwitch.setOn(true, animated: false)
+            }else{
+                rememberMeSwitch.setOn(false, animated: false)
+            }
+        }
+    }
 }
-
-    
