@@ -14,10 +14,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3M2-Md-lLf"/>
+                    <navigationItem key="navigationItem" id="3M2-Md-lLf">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="iCg-Oz-LIb"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="Vaw-nF-E0h" kind="show" id="oFR-tc-pc8"/>
                     </connections>
@@ -54,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MlH-lq-wKU" firstAttribute="top" secondItem="tGQ-0t-Dor" secondAttribute="bottom" constant="37" id="66z-WZ-7KE"/>
                             <constraint firstItem="0E0-Hd-FQ4" firstAttribute="leading" secondItem="MlH-lq-wKU" secondAttribute="trailing" constant="45" id="8Jh-uL-n9j"/>
@@ -132,7 +134,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="awo-gB-N9G"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nbl-14-mFi">
@@ -149,4 +151,7 @@
             <point key="canvasLocation" x="2241" y="131"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
