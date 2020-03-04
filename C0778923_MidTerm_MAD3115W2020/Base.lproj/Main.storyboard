@@ -49,33 +49,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-CH-IXb">
-                                <rect key="frame" x="154" y="444" width="77" height="30"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="signInButton:" destination="zbZ-wM-bpN" eventType="touchUpInside" id="Dcf-CO-LzW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MlH-lq-wKU" firstAttribute="top" secondItem="tGQ-0t-Dor" secondAttribute="bottom" constant="37" id="66z-WZ-7KE"/>
                             <constraint firstItem="0E0-Hd-FQ4" firstAttribute="leading" secondItem="MlH-lq-wKU" secondAttribute="trailing" constant="45" id="8Jh-uL-n9j"/>
                             <constraint firstItem="MlH-lq-wKU" firstAttribute="leading" secondItem="vxO-KB-6t7" secondAttribute="leading" constant="16" id="C6G-UV-YNF"/>
-                            <constraint firstItem="Phy-CH-IXb" firstAttribute="top" secondItem="0E0-Hd-FQ4" secondAttribute="bottom" constant="71" id="FkB-lI-Nsi"/>
                             <constraint firstItem="vxO-KB-6t7" firstAttribute="trailing" secondItem="tGQ-0t-Dor" secondAttribute="trailing" constant="16" id="GdU-0w-3dY"/>
                             <constraint firstItem="vxO-KB-6t7" firstAttribute="trailing" secondItem="hDV-re-2T6" secondAttribute="trailing" constant="16" id="KxR-Jg-a1f"/>
                             <constraint firstItem="hDV-re-2T6" firstAttribute="top" secondItem="vxO-KB-6t7" secondAttribute="top" constant="127" id="Srl-uQ-mQX"/>
                             <constraint firstItem="hDV-re-2T6" firstAttribute="leading" secondItem="vxO-KB-6t7" secondAttribute="leading" constant="16" id="XLT-lt-30p"/>
                             <constraint firstItem="tGQ-0t-Dor" firstAttribute="leading" secondItem="vxO-KB-6t7" secondAttribute="leading" constant="16" id="aOh-60-GjZ"/>
-                            <constraint firstItem="vxO-KB-6t7" firstAttribute="trailing" secondItem="Phy-CH-IXb" secondAttribute="trailing" constant="183" id="gg1-E2-s1l"/>
                             <constraint firstItem="0E0-Hd-FQ4" firstAttribute="top" secondItem="tGQ-0t-Dor" secondAttribute="bottom" constant="42" id="ne6-ct-kud"/>
-                            <constraint firstItem="Phy-CH-IXb" firstAttribute="leading" secondItem="vxO-KB-6t7" secondAttribute="leading" constant="154" id="q6F-Bj-tjp"/>
                             <constraint firstItem="tGQ-0t-Dor" firstAttribute="top" secondItem="hDV-re-2T6" secondAttribute="bottom" constant="27" id="r9u-VL-fe0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vxO-KB-6t7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ty0-bz-5Tg"/>
+                    <navigationItem key="navigationItem" id="Ty0-bz-5Tg">
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="7dv-JX-Nwc"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="passwordTextField" destination="hDV-re-2T6" id="jtx-vd-IuR"/>
                         <outlet property="rememberMeSwitch" destination="MlH-lq-wKU" id="7bm-8B-ggS"/>
