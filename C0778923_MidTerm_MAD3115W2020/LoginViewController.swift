@@ -63,6 +63,10 @@ class LoginViewController: UIViewController {
             showCustomer()
         }
         
+    func  showCustomer() {
+               performSegue(withIdentifier: "customer_entry", sender: nil)
+           }
+           
     }
 
 
