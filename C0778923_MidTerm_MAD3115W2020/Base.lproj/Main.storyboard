@@ -10,13 +10,14 @@
         <!--Customer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CustomerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customerVC" id="BYZ-38-t0r" customClass="CustomerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3M2-Md-lLf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,6 +70,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Login" id="7dv-JX-Nwc">
                             <connections>
                                 <action selector="btnLogin:" destination="zbZ-wM-bpN" id="8qc-lP-SnW"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="customer_entry" id="i5n-9k-b6o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
