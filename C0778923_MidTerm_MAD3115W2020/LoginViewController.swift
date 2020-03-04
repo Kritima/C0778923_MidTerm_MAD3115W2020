@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
     @IBAction func btnLogin(_ sender: UIBarButtonItem) {
         
         let userOrEmail = usernameTextField.text
@@ -44,7 +45,7 @@ class LoginViewController: UIViewController {
                }
     
             if (password!.isEmpty) || (password!.contains("")) {
-                showAlert(title: "Error !!", message: "Please Enter Valid Password")
+                showAlert(title: "Error", message: "Please Enter Valid Password")
                 return
             }
             
@@ -57,7 +58,8 @@ class LoginViewController: UIViewController {
                     userdefault.removeObject(forKey: "userEmail")
                     userdefault.removeObject(forKey: "pass")
                 }
-            }else{
+            }
+            else{
                 showAlert(title: "Error !!", message: "Id or password is Invalid")
                 return
             }

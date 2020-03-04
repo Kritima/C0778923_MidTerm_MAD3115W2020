@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3571512410766F00ECEDD8 /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */; };
 		CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819005240F1B6200F026E4 /* AppDelegate.swift */; };
 		CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819007240F1B6200F026E4 /* SceneDelegate.swift */; };
 		CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819009240F1B6200F026E4 /* LoginViewController.swift */; };
 		CA81900D240F1B6200F026E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA81900B240F1B6200F026E4 /* Main.storyboard */; };
 		CA81900F240F1B6300F026E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA81900E240F1B6300F026E4 /* Assets.xcassets */; };
 		CA819012240F1B6300F026E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA819010240F1B6300F026E4 /* LaunchScreen.storyboard */; };
-		CA81903C240F30C900F026E4 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81903B240F30C900F026E4 /* CustomerViewController.swift */; };
 		CA81903E24106BE500F026E4 /* CustomerAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81903D24106BE500F026E4 /* CustomerAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		CA819002240F1B6200F026E4 /* C0778923_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0778923_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA819005240F1B6200F026E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA819007240F1B6200F026E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		CA81900E240F1B6300F026E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA819011240F1B6300F026E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA819013240F1B6300F026E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA81903B240F30C900F026E4 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		CA81903D24106BE500F026E4 /* CustomerAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,8 +67,8 @@
 				CA81900E240F1B6300F026E4 /* Assets.xcassets */,
 				CA819010240F1B6300F026E4 /* LaunchScreen.storyboard */,
 				CA819013240F1B6300F026E4 /* Info.plist */,
-				CA81903B240F30C900F026E4 /* CustomerViewController.swift */,
 				CA81903D24106BE500F026E4 /* CustomerAddViewController.swift */,
+				CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */,
 			);
 			path = C0778923_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA81903C240F30C900F026E4 /* CustomerViewController.swift in Sources */,
+				CA3571512410766F00ECEDD8 /* CustomerTableViewController.swift in Sources */,
 				CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */,
 				CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */,
 				CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */,
