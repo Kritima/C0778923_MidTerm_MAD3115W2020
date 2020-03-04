@@ -30,12 +30,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter yout email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-re-2T6">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-re-2T6">
                                 <rect key="frame" x="16" y="215" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ente Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGQ-0t-Dor">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGQ-0t-Dor">
                                 <rect key="frame" x="16" y="276" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -77,9 +77,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ty0-bz-5Tg"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="tGQ-0t-Dor" id="CxE-4u-qA5"/>
-                        <outlet property="rememberMeSwitch" destination="MlH-lq-wKU" id="BHP-vI-yJj"/>
-                        <outlet property="usernameTextField" destination="hDV-re-2T6" id="ul1-rn-cza"/>
+                        <outlet property="passwordTextField" destination="hDV-re-2T6" id="jtx-vd-IuR"/>
+                        <outlet property="rememberMeSwitch" destination="MlH-lq-wKU" id="7bm-8B-ggS"/>
+                        <outlet property="usernameTextField" destination="tGQ-0t-Dor" id="6dP-UM-Ezj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahm-XM-EOR" sceneMemberID="firstResponder"/>
