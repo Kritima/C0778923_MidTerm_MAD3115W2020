@@ -18,6 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="3M2-Md-lLf"/>
+                    <connections>
+                        <segue destination="Vaw-nF-E0h" kind="push" id="oFR-tc-pc8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +73,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Login" id="7dv-JX-Nwc">
                             <connections>
                                 <action selector="btnLogin:" destination="zbZ-wM-bpN" id="8qc-lP-SnW"/>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="customer_entry" id="i5n-9k-b6o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -78,6 +80,7 @@
                         <outlet property="passwordTextField" destination="hDV-re-2T6" id="jtx-vd-IuR"/>
                         <outlet property="rememberMeSwitch" destination="MlH-lq-wKU" id="7bm-8B-ggS"/>
                         <outlet property="usernameTextField" destination="tGQ-0t-Dor" id="6dP-UM-Ezj"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="customer_entry" id="y2f-me-aW6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahm-XM-EOR" sceneMemberID="firstResponder"/>
@@ -101,6 +104,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGI-4p-Y1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="130.58035714285714"/>
+        </scene>
+        <!--Customer Add View Controller-->
+        <scene sceneID="dMO-8l-tKL">
+            <objects>
+                <viewController id="Vaw-nF-E0h" customClass="CustomerAddViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RZx-eZ-bfh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-i1-FOd">
+                                <rect key="frame" x="18" y="171" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OV0-ol-Gn4">
+                                <rect key="frame" x="18" y="220" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C65-bO-AoV">
+                                <rect key="frame" x="18" y="119" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="awo-gB-N9G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nbl-14-mFi"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="OV0-ol-Gn4" id="5Za-n5-YEb"/>
+                        <outlet property="studentIdTextField" destination="C65-bO-AoV" id="y3E-uH-PeO"/>
+                        <outlet property="studentNameTextField" destination="OIT-i1-FOd" id="bez-nM-gea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AiE-gE-OV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="131"/>
         </scene>
     </scenes>
 </document>
