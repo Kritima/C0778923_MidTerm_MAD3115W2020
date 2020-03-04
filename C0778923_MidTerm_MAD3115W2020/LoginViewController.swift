@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
                 return
             }
             
-            if userOrEmail == "admin" || password == "admin@123"{
+            if userOrEmail == "kritima@gmail.com" || password == "kk@123"{
                 let userdefault = UserDefaults.standard
                 if self.rememberMeSwitch.isOn {
                     userdefault.set(self.usernameTextField.text,forKey:"userEmail")
