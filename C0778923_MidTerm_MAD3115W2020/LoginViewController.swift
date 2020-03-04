@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
          userRememberCheck()
+        self.navigationItem.title = "Sign In"
     }
 
 
