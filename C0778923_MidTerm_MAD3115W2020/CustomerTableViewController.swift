@@ -46,7 +46,7 @@ class CustomerTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell", for: indexPath)
         
         let customer = customers[indexPath.row]
         cell.textLabel?.text = customer.name

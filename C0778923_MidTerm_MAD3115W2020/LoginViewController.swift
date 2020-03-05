@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
         let userOrEmail = usernameTextField.text
                let password = passwordTextField.text
                if (userOrEmail!.isEmpty || userOrEmail!.contains("")){
-                   showAlert(title: "Error !!", message: "Please Enter Valid Email or Username")
+                   showAlert(title: "Error", message: "Please Enter Valid Email or Username")
                    return
                }
     
@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
                 return
             }
             
-            if userOrEmail == "kritima@gmail.com" || password == "kk@123"{
+            if userOrEmail == "admin" || password == "admin@123" {
                 let userdefault = UserDefaults.standard
                 if self.rememberMeSwitch.isOn {
                     userdefault.set(self.usernameTextField.text,forKey:"userEmail")
@@ -58,16 +58,15 @@ class LoginViewController: UIViewController {
                     userdefault.removeObject(forKey: "userEmail")
                     userdefault.removeObject(forKey: "pass")
                 }
-            }
-            else{
-                showAlert(title: "Error !!", message: "Id or password is Invalid")
+            }else{
+                showAlert(title: "Error", message: "Id or password is Invalid")
                 return
             }
             showCustomer()
         }
         
     func  showCustomer() {
-               performSegue(withIdentifier: "customer_entry", sender: nil)
+               performSegue(withIdentifier: "customer_table", sender: nil)
            }
            
     func showAlert(title: String, message: String){
@@ -75,8 +74,8 @@ class LoginViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
-    }
 
+}
 
 
 
