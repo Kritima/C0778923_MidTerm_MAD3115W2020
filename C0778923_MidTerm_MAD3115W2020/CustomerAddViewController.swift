@@ -10,8 +10,12 @@ import UIKit
 
 class CustomerAddViewController: UIViewController {
 
+   
+    
     @IBOutlet weak var txtfldCustomerId: UITextField!
+    
     @IBOutlet weak var txtfldCustomerName: UITextField!
+    
     @IBOutlet weak var txtfldCustomerEmail: UITextField!
     
     override func viewDidLoad() {

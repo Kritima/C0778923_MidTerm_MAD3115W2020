@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DataStorage
+/*class DataStorage
 {
     private static let instance = DataStorage()
   private  lazy var customerName : [Customer] = []
@@ -35,4 +35,4 @@ class DataStorage
         customerName.append(Customer(name: "UK"))
         customerName.append(Customer(name: "Canada"))
     }
-}
+}*/

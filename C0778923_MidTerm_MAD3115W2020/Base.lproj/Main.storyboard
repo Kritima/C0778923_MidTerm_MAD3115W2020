@@ -18,7 +18,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hjd-j3-k0g" kind="relationship" relationship="rootViewController" id="7y0-1p-NIm"/>
+                        <segue destination="Vaw-nF-E0h" kind="relationship" relationship="rootViewController" id="BhI-c8-mgN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGI-4p-Y1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -28,31 +28,40 @@
         <!--Customer Add View Controller-->
         <scene sceneID="dMO-8l-tKL">
             <objects>
-                <viewController id="Vaw-nF-E0h" customClass="CustomerAddViewController" sceneMemberID="viewController">
+                <viewController id="Vaw-nF-E0h" customClass="CustomerAddViewController" customModule="C0778923_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RZx-eZ-bfh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-i1-FOd" userLabel="Customer Name Text Field">
-                                <rect key="frame" x="18" y="171" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lu3-tL-aka">
+                                <rect key="frame" x="16" y="262" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OV0-ol-Gn4" userLabel="Customer Email Text Field">
-                                <rect key="frame" x="18" y="220" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Stq-d3-qUC">
+                                <rect key="frame" x="16" y="188" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C65-bO-AoV" userLabel="Customer Id Text Field">
-                                <rect key="frame" x="18" y="119" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLA-Xf-CUD">
+                                <rect key="frame" x="16" y="336" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lu3-tL-aka" firstAttribute="leading" secondItem="awo-gB-N9G" secondAttribute="leading" constant="16" id="3l9-OU-YQD"/>
+                            <constraint firstItem="gLA-Xf-CUD" firstAttribute="top" secondItem="lu3-tL-aka" secondAttribute="bottom" constant="40" id="7Xh-Va-qcC"/>
+                            <constraint firstItem="awo-gB-N9G" firstAttribute="trailing" secondItem="Stq-d3-qUC" secondAttribute="trailing" constant="16" id="8je-EW-YFq"/>
+                            <constraint firstItem="lu3-tL-aka" firstAttribute="top" secondItem="Stq-d3-qUC" secondAttribute="bottom" constant="40" id="Chk-6z-pOP"/>
+                            <constraint firstItem="awo-gB-N9G" firstAttribute="trailing" secondItem="gLA-Xf-CUD" secondAttribute="trailing" constant="16" id="G0Z-MO-t3e"/>
+                            <constraint firstItem="awo-gB-N9G" firstAttribute="trailing" secondItem="lu3-tL-aka" secondAttribute="trailing" constant="16" id="OYh-8X-QSy"/>
+                            <constraint firstItem="awo-gB-N9G" firstAttribute="bottom" secondItem="gLA-Xf-CUD" secondAttribute="bottom" constant="492" id="T6y-JT-qaI"/>
+                            <constraint firstItem="Stq-d3-qUC" firstAttribute="top" secondItem="awo-gB-N9G" secondAttribute="top" constant="100" id="bDz-9F-bSP"/>
+                            <constraint firstItem="Stq-d3-qUC" firstAttribute="leading" secondItem="awo-gB-N9G" secondAttribute="leading" constant="16" id="n0H-b5-OwI"/>
+                            <constraint firstItem="gLA-Xf-CUD" firstAttribute="leading" secondItem="awo-gB-N9G" secondAttribute="leading" constant="16" id="ndB-b9-Ehs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="awo-gB-N9G"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nbl-14-mFi">
@@ -63,17 +72,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="emailTextField" destination="OV0-ol-Gn4" id="5Za-n5-YEb"/>
-                        <outlet property="studentIdTextField" destination="C65-bO-AoV" id="y3E-uH-PeO"/>
-                        <outlet property="studentNameTextField" destination="OIT-i1-FOd" id="bez-nM-gea"/>
-                        <outlet property="txtfldCustomerEmail" destination="OV0-ol-Gn4" id="f0o-pu-wa8"/>
-                        <outlet property="txtfldCustomerId" destination="C65-bO-AoV" id="oTE-G1-YP1"/>
-                        <outlet property="txtfldCustomerName" destination="OV0-ol-Gn4" id="Fk2-kQ-6IQ"/>
+                        <outlet property="txtfldCustomerEmail" destination="gLA-Xf-CUD" id="Ab3-OC-QcJ"/>
+                        <outlet property="txtfldCustomerId" destination="Stq-d3-qUC" id="uva-M0-wp2"/>
+                        <outlet property="txtfldCustomerName" destination="lu3-tL-aka" id="PVG-yI-tyq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiE-gE-OV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="131"/>
+            <point key="canvasLocation" x="850.72463768115949" y="956.91964285714278"/>
         </scene>
         <!--Customer Details View Controller-->
         <scene sceneID="KdE-ep-Ixi">
@@ -130,20 +136,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ok-pE-dyZ">
-                                <rect key="frame" x="16" y="215" width="382" height="34"/>
+                                <rect key="frame" x="16" y="171" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-an-Mmw">
-                                <rect key="frame" x="16" y="276" width="382" height="34"/>
+                                <rect key="frame" x="16" y="232" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-zP-teo">
-                                <rect key="frame" x="16" y="347" width="51" height="31"/>
+                                <rect key="frame" x="16" y="303" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ni-Io-HBY">
-                                <rect key="frame" x="110" y="352" width="112" height="21"/>
+                                <rect key="frame" x="110" y="308" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -175,7 +181,6 @@
                         <outlet property="passwordTextField" destination="jxH-an-Mmw" id="f8M-F6-67T"/>
                         <outlet property="rememberMeSwitch" destination="Esb-zP-teo" id="UC7-ZY-OZ1"/>
                         <outlet property="usernameTextField" destination="9ok-pE-dyZ" id="2iz-X9-o8J"/>
-                        <segue destination="O9n-L1-0Sr" kind="show" identifier="customer_entry" id="gKb-Ua-Tdh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ke0-lw-wXh" sceneMemberID="firstResponder"/>
@@ -191,7 +196,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vaC-bi-OuH">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="y1X-0X-wq9">
@@ -217,7 +222,6 @@
                     <navigationItem key="navigationItem" id="c37-BN-sSc"/>
                     <connections>
                         <outlet property="tblCustomer" destination="vaC-bi-OuH" id="17A-O5-c6g"/>
-                        <segue destination="Vaw-nF-E0h" kind="show" id="I7l-2U-liU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP5-UY-IdU" sceneMemberID="firstResponder"/>

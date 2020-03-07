@@ -19,7 +19,7 @@ class CustomerTableViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem?.title = "Logout"
         // Do any additional setup after loading the view.
-        customerName = DataStorage.getInstance().getAllCountries()
+       // customerName = DataStorage.getInstance().getAllCountries()
         
     
     }
