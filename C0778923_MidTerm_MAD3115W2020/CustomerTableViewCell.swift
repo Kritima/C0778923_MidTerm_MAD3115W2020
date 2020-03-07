@@ -6,7 +6,7 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 class CustomerTableViewCell: UITableViewCell {
 
@@ -27,4 +27,4 @@ class CustomerTableViewCell: UITableViewCell {
         self.lblCustomerName.text="\(customer.name)"
     }
 
-}
+}*/

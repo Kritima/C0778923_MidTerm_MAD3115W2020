@@ -6,16 +6,14 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
-struct Customer: Codable {
-    let id: String
-    let name: String
-    let email: String
+struct Customer {
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name, price
-        case description = "Description"
+    let name: String
+    
+    init(name: String) {
+    self.name = name    
 }
 }

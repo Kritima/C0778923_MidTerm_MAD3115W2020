@@ -39,21 +39,21 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
         }
     }*/
     
-func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140.0
-    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allCustomer.count
+       return allCustomer.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let product = allProducts[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customerCell") as! CustomerTableViewCell
-        //cell.configureEachCell(product: product)
-        
+    func numberOfSections(in tableView : UITableView) -> Int{
+    
+    return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
         let c = self.allCustomer[indexPath.row]
-        cell.configureEachCell(customer: c)
-        return cell
         
+        cell?.textLabel?.text = c.name
+        return cell!
     }
 }

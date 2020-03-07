@@ -10,11 +10,17 @@ import UIKit
 
 class CustomerAddViewController: UIViewController {
 
+    @IBOutlet weak var txtfldCustomerId: UITextField!
+    @IBOutlet weak var txtfldCustomerName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "New Customer"
+        
+        // let preferences = Preferences(webserviceURL: "https://api.twitter.com", itemsPerPage: 10, backupEnabled: false)
     }
+    
     
 
     /*

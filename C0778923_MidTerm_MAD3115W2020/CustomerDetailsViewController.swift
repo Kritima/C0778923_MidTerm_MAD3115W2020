@@ -20,7 +20,7 @@ class CustomerDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-     func configureView(for product: Product, with price: Double) {
+     /*func configureView(for product: Product, with price: Double) {
             self.navigationItem.title = product.name
             self.navigationController!.navigationItem.title = product.name
             self.ivProduct.image = UIImage(named: product.imgURL)
@@ -28,7 +28,7 @@ class CustomerDetailsViewController: UIViewController {
             self.lblPrice.text = "$" + String(format: "%.2f", price)
             self.lblDescription.text = product.description
             self.lblQuantity.text = "Quantity: " + String(quantity)
-        }
+        }*/
     
 
     /*
