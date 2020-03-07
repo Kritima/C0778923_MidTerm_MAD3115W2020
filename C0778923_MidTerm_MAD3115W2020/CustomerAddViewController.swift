@@ -29,7 +29,15 @@ class CustomerAddViewController: UIViewController {
 
     @IBAction func btnSave(_ sender: UIBarButtonItem) {
         
-        let customer = Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text!)
+        if (txtfldCustomerId.text!.isEmpty || txtfldCustomerId.text!.contains("") || txtfldCustomerName.text!.isEmpty || txtfldCustomerName.text!.contains("") ||
+            txtfldCustomerEmail.text!.isEmpty || txtfldCustomerEmail.text!.contains(""))
+        {
+             showAlert(title: "Error", message: "Please enter the required fields")
+        }
+            
+        else
+            {
+            let customer = Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text!)
         
         let encoder = PropertyListEncoder()
         encoder.outputFormat = .xml
@@ -43,6 +51,12 @@ class CustomerAddViewController: UIViewController {
             print(error)
         }
         
+        showAlert(title: "Added", message: "New Customer Added")
+        
+            
+        }
+        
+        
     }
     /*
     // MARK: - Navigation
@@ -53,5 +67,9 @@ class CustomerAddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func showAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
 }

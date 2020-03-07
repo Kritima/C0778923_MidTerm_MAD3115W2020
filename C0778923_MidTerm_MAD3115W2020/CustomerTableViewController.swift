@@ -17,15 +17,19 @@ class CustomerTableViewController: UIViewController {
    lazy var customerName : [Customer] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.leftBarButtonItem?.title = "Logout"
+        self.navigationItem.title = "Customers"
         // Do any additional setup after loading the view.
        // customerName = DataStorage.getInstance().getAllCountries()
         
     
     }
-   
-
-}
+    @IBAction func btnLogout(_ sender: UIBarButtonItem) {
+            
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        
+    }
 
 extension CustomerTableViewController : UITableViewDelegate, UITableViewDataSource
 {
