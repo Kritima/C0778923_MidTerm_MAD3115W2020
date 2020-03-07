@@ -9,11 +9,9 @@
 import UIKit
 import Foundation
 
-struct Customer {
+struct Customer: Codable {
     
-    let name: String
-    
-    init(name: String) {
-    self.name = name    
-}
+    var id:String
+    var name:String
+    var email:String
 }

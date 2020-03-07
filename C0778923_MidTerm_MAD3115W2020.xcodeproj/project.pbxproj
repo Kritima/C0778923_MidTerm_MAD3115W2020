@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CA3571512410766F00ECEDD8 /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */; };
 		CA35719D2411C9D400ECEDD8 /* CustomerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA35719C2411C9D400ECEDD8 /* CustomerList.plist */; };
-		CA3571BF2412106600ECEDD8 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571BE2412106600ECEDD8 /* CustomerTableViewCell.swift */; };
 		CA3571C1241210F500ECEDD8 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571C0241210F500ECEDD8 /* Customer.swift */; };
 		CA3571C32412120D00ECEDD8 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */; };
 		CA3571E724142C3D00ECEDD8 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571E624142C3D00ECEDD8 /* DataStorage.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		CA35719C2411C9D400ECEDD8 /* CustomerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CustomerList.plist; sourceTree = "<group>"; };
-		CA3571BE2412106600ECEDD8 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
 		CA3571C0241210F500ECEDD8 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
 		CA3571E624142C3D00ECEDD8 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				CA81903D24106BE500F026E4 /* CustomerAddViewController.swift */,
 				CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */,
 				CA35719C2411C9D400ECEDD8 /* CustomerList.plist */,
-				CA3571BE2412106600ECEDD8 /* CustomerTableViewCell.swift */,
 				CA3571C0241210F500ECEDD8 /* Customer.swift */,
 				CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */,
 				CA3571E624142C3D00ECEDD8 /* DataStorage.swift */,
@@ -168,7 +165,6 @@
 				CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */,
 				CA3571C32412120D00ECEDD8 /* CustomerDetailsViewController.swift in Sources */,
 				CA81903E24106BE500F026E4 /* CustomerAddViewController.swift in Sources */,
-				CA3571BF2412106600ECEDD8 /* CustomerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

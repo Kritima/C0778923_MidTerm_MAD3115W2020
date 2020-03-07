@@ -12,17 +12,34 @@ class CustomerAddViewController: UIViewController {
 
     @IBOutlet weak var txtfldCustomerId: UITextField!
     @IBOutlet weak var txtfldCustomerName: UITextField!
+    @IBOutlet weak var txtfldCustomerEmail: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "New Customer"
         
-        // let preferences = Preferences(webserviceURL: "https://api.twitter.com", itemsPerPage: 10, backupEnabled: false)
     }
     
     
 
+    @IBAction func btnSave(_ sender: UIBarButtonItem) {
+        
+        let customer = Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text!)
+        
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("CustomerList.plist")
+
+        do {
+            let data = try encoder.encode(customer)
+            try data.write(to: path)
+        } catch {
+            print(error)
+        }
+        
+    }
     /*
     // MARK: - Navigation
 

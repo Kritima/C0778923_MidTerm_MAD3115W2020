@@ -8,39 +8,29 @@
 
 import UIKit
 
-class CustomerTableViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-    
+class CustomerTableViewController: UIViewController {
+
+   
+
     @IBOutlet weak var tblCustomer: UITableView!
-    var allCustomer = [Customer]()
     
+   lazy var customerName : [Customer] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        tblCustomer.delegate = self
-        tblCustomer.dataSource = self
+        self.navigationItem.leftBarButtonItem?.title = "Logout"
+        // Do any additional setup after loading the view.
+        customerName = DataStorage.getInstance().getAllCountries()
         
-        self.navigationItem.title = "Customers"
-        
-        if  let path = Bundle.main.path(forResource: "CustomerList", ofType: "plist"),
-                   let xml  = FileManager.default.contents(atPath: path),
-                   let preferences = try? PropertyListDecoder().decode([Customer].self, from: xml){
-                   allCustomer = preferences
-               }
+    
     }
-    
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case "customer_details":
-            let customerDetailsController = segue.destination as! CustomerDetailsViewController
-            if let indexPath = self.tblCustomer.indexPathForSelectedRow {
-                customerDetailsController.configureProductDescription(product: allCustomer[indexPath.row])
-            }
-        default:
-            break
-        }
-    }*/
-    
+   
+
+}
+
+extension CustomerTableViewController : UITableViewDelegate, UITableViewDataSource
+{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return allCustomer.count
+        return customerName.count
     }
     
     func numberOfSections(in tableView : UITableView) -> Int{
@@ -51,9 +41,16 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
-        let c = self.allCustomer[indexPath.row]
+        let country = customerName[indexPath.row]
         
-        cell?.textLabel?.text = c.name
+        cell?.textLabel?.text = country.name
         return cell!
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(150.0)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let c = customerName[indexPath.row]
+        print(c.name)
     }
 }

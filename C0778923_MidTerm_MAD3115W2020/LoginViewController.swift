@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userRememberCheck()
+        self.navigationItem.title = "Sign In"
     }
     
     
@@ -45,7 +46,7 @@ class LoginViewController: UIViewController {
                   return
               }
               
-              if userOrEmail == "admin" || password == "admin@123"{
+              if userOrEmail == "admin@gmail.com" || password == "admin@123"{
                   let userdefault = UserDefaults.standard
                   if self.rememberMeSwitch.isOn {
                       userdefault.set(self.usernameTextField.text,forKey:"userEmail")
