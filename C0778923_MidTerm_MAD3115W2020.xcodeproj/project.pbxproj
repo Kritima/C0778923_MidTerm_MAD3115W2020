@@ -11,7 +11,7 @@
 		CA35719D2411C9D400ECEDD8 /* CustomerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA35719C2411C9D400ECEDD8 /* CustomerList.plist */; };
 		CA3571C1241210F500ECEDD8 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571C0241210F500ECEDD8 /* Customer.swift */; };
 		CA3571C32412120D00ECEDD8 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */; };
-		CA3571E724142C3D00ECEDD8 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571E624142C3D00ECEDD8 /* DataStorage.swift */; };
+		CA3571E724142C3D00ECEDD8 /* DataStorageSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */; };
 		CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819005240F1B6200F026E4 /* AppDelegate.swift */; };
 		CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819007240F1B6200F026E4 /* SceneDelegate.swift */; };
 		CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819009240F1B6200F026E4 /* LoginViewController.swift */; };
@@ -26,7 +26,7 @@
 		CA35719C2411C9D400ECEDD8 /* CustomerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CustomerList.plist; sourceTree = "<group>"; };
 		CA3571C0241210F500ECEDD8 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
-		CA3571E624142C3D00ECEDD8 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageSingleton.swift; sourceTree = "<group>"; };
 		CA819002240F1B6200F026E4 /* C0778923_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0778923_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA819005240F1B6200F026E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA819007240F1B6200F026E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				CA35719C2411C9D400ECEDD8 /* CustomerList.plist */,
 				CA3571C0241210F500ECEDD8 /* Customer.swift */,
 				CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */,
-				CA3571E624142C3D00ECEDD8 /* DataStorage.swift */,
+				CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */,
 			);
 			path = C0778923_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				CA3571512410766F00ECEDD8 /* CustomerTableViewController.swift in Sources */,
 				CA3571C1241210F500ECEDD8 /* Customer.swift in Sources */,
 				CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */,
-				CA3571E724142C3D00ECEDD8 /* DataStorage.swift in Sources */,
+				CA3571E724142C3D00ECEDD8 /* DataStorageSingleton.swift in Sources */,
 				CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */,
 				CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */,
 				CA3571C32412120D00ECEDD8 /* CustomerDetailsViewController.swift in Sources */,

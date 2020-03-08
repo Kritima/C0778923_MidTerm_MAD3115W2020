@@ -12,6 +12,6 @@ import Foundation
 struct Customer: Codable {
     
     var id:String
-    var name:String
-    var email:String
+    var name: String
+    var email: String
 }

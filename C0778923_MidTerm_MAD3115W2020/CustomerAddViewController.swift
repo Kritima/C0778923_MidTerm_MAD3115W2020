@@ -23,8 +23,9 @@ class CustomerAddViewController: UIViewController {
 
         self.navigationItem.title = "New Customer"
         
+        
     }
-    
+
     
 
     @IBAction func btnSave(_ sender: UIBarButtonItem) {
@@ -37,25 +38,24 @@ class CustomerAddViewController: UIViewController {
             
         else
             {
-            let customer = Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text!)
-        
-        let encoder = PropertyListEncoder()
-        encoder.outputFormat = .xml
+                let customers = Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text! )
+                
+         let encoder = PropertyListEncoder()
+         encoder.outputFormat = .xml
 
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("CustomerList.plist")
+         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("CustomerList.plist")
 
-        do {
-            let data = try encoder.encode(customer)
-            try data.write(to: path)
-        } catch {
-            print(error)
-        }
-        
+         do {
+             let data = try encoder.encode(customers)
+             try data.write(to: path)
+         } catch {
+             print(error)
+         }
+          
         showAlert(title: "Added", message: "New Customer Added")
-        
             
         }
-        
+
         
     }
     /*
