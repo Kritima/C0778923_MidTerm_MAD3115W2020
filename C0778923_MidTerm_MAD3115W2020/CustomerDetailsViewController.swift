@@ -25,10 +25,11 @@ class CustomerDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Bill Details"
+        self.navigationItem.rightBarButtonItem?.title = "Add New Bill"
         
-        self.lblCustomerId.text = customerId
-        self.lblCustomerName.text = customerName
-        self.lblCustomerEmail.text = customerEmail
+        self.lblCustomerId.text = "Customer Id: \(customerId)"
+        self.lblCustomerName.text = "Customer Name: \(customerName)"
+        self.lblCustomerEmail.text = "Customer Email: \(customerEmail)"
 
         // Do any additional setup after loading the view.
     }
