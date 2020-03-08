@@ -10,18 +10,25 @@ import UIKit
 
 class CustomerDetailsViewController: UIViewController {
     
-     @IBOutlet weak var lblCustomerId: UILabel!
+    @IBOutlet weak var lblCustomerId: UILabel!
     @IBOutlet weak var lblCustomerName: UILabel!
     @IBOutlet weak var lblCustomerEmail: UILabel!
+    
+    
+    
+    var customerId = ""
+    var customerName = ""
+    var customerEmail = ""
     
     var customerDetails: Customer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Bill Details"
-        //let customer = self.customerDetails {
-         //   configureView(for: customer)
-        }
+        
+        self.lblCustomerId.text = customerId
+        self.lblCustomerName.text = customerName
+        self.lblCustomerEmail.text = customerEmail
 
         // Do any additional setup after loading the view.
     }
@@ -32,7 +39,6 @@ class CustomerDetailsViewController: UIViewController {
           }
     
      func configureView(for customer: Customer) {
-        self.navigationItem.title = "Bill Details"
         self.lblCustomerId.text = customer.id
         self.lblCustomerName.text = customer.name
         self.lblCustomerEmail.text = customer.email
@@ -50,3 +56,4 @@ class CustomerDetailsViewController: UIViewController {
     }
     */
 
+}

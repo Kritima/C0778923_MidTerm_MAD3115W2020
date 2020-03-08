@@ -81,50 +81,47 @@
             <point key="canvasLocation" x="2338" y="131"/>
         </scene>
         <!--Customer Details View Controller-->
-        <scene sceneID="KdE-ep-Ixi">
+        <scene sceneID="kVl-zr-B79">
             <objects>
-                <viewController id="xd8-QM-wbD" customClass="CustomerDetailsViewController" customModule="C0778923_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vMn-tj-JOL">
+                <viewController storyboardIdentifier="detailsVC" id="0y8-zY-GAg" customClass="CustomerDetailsViewController" customModule="C0778923_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iHa-OG-Y5u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-L0-7M6">
-                                <rect key="frame" x="168" y="110" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSs-ck-Lh6">
+                                <rect key="frame" x="16" y="188" width="382" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQs-sZ-BZ3">
-                                <rect key="frame" x="168" y="156" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqB-jl-cjw">
+                                <rect key="frame" x="16" y="262" width="382" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opr-Wz-uOu">
-                                <rect key="frame" x="168" y="209" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-AQ-zAr">
+                                <rect key="frame" x="16" y="336" width="382" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="r6z-UM-ELD"/>
+                        <viewLayoutGuide key="safeArea" id="vme-T0-uf3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eTt-u2-XzH">
-                        <barButtonItem key="rightBarButtonItem" title="Add New Bill" id="cNj-fB-jn9"/>
-                    </navigationItem>
                     <connections>
-                        <outlet property="lblCustomerEmail" destination="opr-Wz-uOu" id="0Jb-fc-b4E"/>
-                        <outlet property="lblCustomerId" destination="Qa1-L0-7M6" id="ngn-Yq-48v"/>
-                        <outlet property="lblCustomerName" destination="XQs-sZ-BZ3" id="j5y-y3-KPq"/>
+                        <outlet property="lblCustomerEmail" destination="AgD-AQ-zAr" id="FCy-QC-4gQ"/>
+                        <outlet property="lblCustomerId" destination="SSs-ck-Lh6" id="VWb-jB-gWw"/>
+                        <outlet property="lblCustomerName" destination="JqB-jl-cjw" id="AlM-qX-RSJ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0NE-Z0-U5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWc-F0-gvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="131"/>
+            <point key="canvasLocation" x="3116" y="131"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="MmR-kp-kdB">
@@ -219,9 +216,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="xd8-QM-wbD" kind="show" identifier="customer_details" id="G0g-0A-gJl"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
