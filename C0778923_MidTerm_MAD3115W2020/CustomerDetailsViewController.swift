@@ -18,19 +18,25 @@ class CustomerDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let customer = self.customerDetails {
-            configureView(for: customer)
+        //let customer = self.customerDetails {
+         //   configureView(for: customer)
         }
 
         // Do any additional setup after loading the view.
     }
     
+    /*func configureProductDescription(customer: Customer){
+              customerDetails = customer
+              
+          }
+    
      func configureView(for customer: Customer) {
-            self.navigationItem.title = "Bill Details"
+        self.navigationItem.title = "Bill Details"
         self.lblCustomerId.text = customer.id
         self.lblCustomerName.text = customer.name
         self.lblCustomerEmail.text = customer.email
-        }
+        }*/
+    
     
 
     /*
@@ -43,4 +49,3 @@ class CustomerDetailsViewController: UIViewController {
     }
     */
 
-}

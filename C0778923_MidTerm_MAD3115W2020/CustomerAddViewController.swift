@@ -18,13 +18,19 @@ class CustomerAddViewController: UIViewController {
     
     @IBOutlet weak var txtfldCustomerEmail: UITextField!
     
+     lazy var newCustomer : [Customer] = []
+    var allCustomers = [Customer]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "New Customer"
+           self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(CustomerAddViewController.back(sender:)))
+           self.navigationItem.leftBarButtonItem = newBackButton
+       }
         
         
-    }
 
     
 
@@ -38,21 +44,14 @@ class CustomerAddViewController: UIViewController {
             
         else
             {
-                let customers = Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text! )
-                
-         let encoder = PropertyListEncoder()
-         encoder.outputFormat = .xml
-
-         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("CustomerList.plist")
-
-         do {
-             let data = try encoder.encode(customers)
-             try data.write(to: path)
-         } catch {
-             print(error)
-         }
+                DataStorage.getInstance().addCustomer(customer: (Customer(id: txtfldCustomerId.text!, name: txtfldCustomerName.text!, email: txtfldCustomerEmail.text!)))
           
         showAlert(title: "Added", message: "New Customer Added")
+        
+               txtfldCustomerId.text = ""
+               txtfldCustomerName.text = ""
+                txtfldCustomerEmail.text = ""
+                
             
         }
 
@@ -67,9 +66,16 @@ class CustomerAddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+   
+    
     func showAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
+    
+    @objc func back(sender: UIBarButtonItem) {
+        let tableVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tableVC") as! CustomerTableViewController
+               self.navigationController?.pushViewController(tableVC, animated: true)
+         }
 }

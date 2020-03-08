@@ -8,7 +8,7 @@
 
 import Foundation
 
-/*class DataStorage
+class DataStorage
 {
     private static let instance = DataStorage()
     private lazy var customerList : [Customer] = []
@@ -19,7 +19,7 @@ import Foundation
         return instance
     }
     
-    func addCountry(customer: Customer)
+    func addCustomer(customer: Customer)
     {
         self.customerList.append(customer)
     }
@@ -32,13 +32,12 @@ import Foundation
     func loadData()
       {
         
-       if  let path        = Bundle.main.path(forResource: "CustomerList", ofType: "plist"),
-           let xml         = FileManager.default.contents(atPath: path),
-           let customers = try? PropertyListDecoder().decode(Customer.self, from: xml)
-       {
-        print(customers.name)
+       if  let path = Bundle.main.path(forResource: "CustomerList", ofType: "plist"),
+           let xml  = FileManager.default.contents(atPath: path),
+           let customers = try? PropertyListDecoder().decode([Customer].self, from: xml){
+           customerList = customers
        }
         
     }
 }
-*/
+

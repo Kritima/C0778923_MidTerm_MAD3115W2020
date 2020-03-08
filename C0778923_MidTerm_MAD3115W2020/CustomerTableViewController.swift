@@ -18,15 +18,10 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
         
       override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Customers"
         tblCustomer.delegate = self
         tblCustomer.dataSource = self
-        //customerNames = DataStorage.getInstance().getAllCustomer()
-        if  let path = Bundle.main.path(forResource: "CustomerList", ofType: "plist"),
-                   let xml  = FileManager.default.contents(atPath: path),
-                   let customers = try? PropertyListDecoder().decode([Customer].self, from: xml){
-                   allCustomers = customers
-               }
-        
+        allCustomers = DataStorage.getInstance().getAllCustomer()
         // Do any additional setup after loading the view.
       }
     
@@ -53,17 +48,19 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
             self.navigationController?.pushViewController(loginVC, animated: true)
         }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            switch segue.identifier {
            case "customer_details":
                let customerDetailsController = segue.destination as! CustomerDetailsViewController
                if let indexPath = self.tblCustomer.indexPathForSelectedRow {
-                   customerDetailsController.configureProductDescription(product: allProducts[indexPath.row])
+                   customerDetailsController.configureProductDescription(customer: allCustomers[indexPath.row])
                }
            default:
                break
            }
-       }
+       }*/
+    
+   
     
     }
 

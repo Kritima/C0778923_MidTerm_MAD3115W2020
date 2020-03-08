@@ -38,10 +38,12 @@
                             <constraint firstItem="eiu-aa-7If" firstAttribute="top" secondItem="ioZ-nU-IOk" secondAttribute="bottom" constant="75" id="Plu-cA-ctu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LkS-1s-WlA" secondAttribute="trailing" constant="16" id="bml-gR-YOM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eiu-aa-7If" secondAttribute="trailing" constant="16" id="h97-6z-1p7"/>
+                            <constraint firstItem="LkS-1s-WlA" firstAttribute="top" secondItem="eiu-aa-7If" secondAttribute="bottom" constant="75" id="mAh-4H-l4j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ioZ-nU-IOk" secondAttribute="trailing" constant="16" id="n2p-dQ-ump"/>
                             <constraint firstItem="ioZ-nU-IOk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="rcy-pD-tOB"/>
                             <constraint firstItem="eiu-aa-7If" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tTH-D4-nTP"/>
                             <constraint firstItem="ioZ-nU-IOk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wxy-Lm-Wul"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LkS-1s-WlA" secondAttribute="bottom" constant="308" id="zEk-Dl-rtI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
