@@ -29,6 +29,7 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
         
         // Do any additional setup after loading the view.
       }
+    
       func numberOfSections(in tableView : UITableView) -> Int{
       
       return 1
@@ -38,14 +39,19 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
       }
       
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-          //let product = allProducts[indexPath.row]
           let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell")
-          //cell.configureEachCell(product: product)
           
           let p = self.allCustomers[indexPath.row]
         cell?.textLabel?.text = p.name
+         cell?.imageView?.image = #imageLiteral(resourceName: "icons8-customer-48")
           return cell!
           
       }
+    @IBAction func btnLogout(_ sender: UIBarButtonItem) {
+        
+            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+            self.navigationController?.pushViewController(loginVC, animated: true)
+        }
     }
+
     

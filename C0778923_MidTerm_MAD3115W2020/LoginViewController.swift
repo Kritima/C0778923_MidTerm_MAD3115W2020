@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         userRememberCheck()
         self.navigationItem.title = "Sign In"
+        self.navigationItem.hidesBackButton=true;
     }
     
     

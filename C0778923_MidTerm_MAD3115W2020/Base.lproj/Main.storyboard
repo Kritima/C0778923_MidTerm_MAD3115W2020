@@ -238,7 +238,7 @@
                     <navigationItem key="navigationItem" id="c37-BN-sSc">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="cTN-2z-JoJ">
                             <connections>
-                                <action selector="btnLogout:" destination="O9n-L1-0Sr" id="0sU-sl-cZS"/>
+                                <action selector="btnLogout:" destination="O9n-L1-0Sr" id="uaN-NT-svt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="IVc-1j-ptw">
