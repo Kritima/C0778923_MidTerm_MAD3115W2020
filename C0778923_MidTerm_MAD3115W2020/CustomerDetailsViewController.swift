@@ -14,21 +14,23 @@ class CustomerDetailsViewController: UIViewController {
     @IBOutlet weak var lblCustomerName: UILabel!
     @IBOutlet weak var lblCustomerEmail: UILabel!
     
+    var customerDetails: Customer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let customer = self.customerDetails {
+            configureView(for: customer)
+        }
 
         // Do any additional setup after loading the view.
     }
     
-     /*func configureView(for product: Product, with price: Double) {
-            self.navigationItem.title = product.name
-            self.navigationController!.navigationItem.title = product.name
-            self.ivProduct.image = UIImage(named: product.imgURL)
-    //        self.lblProductName.text = product.name
-            self.lblPrice.text = "$" + String(format: "%.2f", price)
-            self.lblDescription.text = product.description
-            self.lblQuantity.text = "Quantity: " + String(quantity)
-        }*/
+     func configureView(for customer: Customer) {
+            self.navigationItem.title = "Bill Details"
+        self.lblCustomerId.text = customer.id
+        self.lblCustomerName.text = customer.name
+        self.lblCustomerEmail.text = customer.email
+        }
     
 
     /*

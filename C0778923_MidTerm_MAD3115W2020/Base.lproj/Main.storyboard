@@ -216,7 +216,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xd8-QM-wbD" kind="show" id="G0g-0A-gJl"/>
+                                            <segue destination="xd8-QM-wbD" kind="show" identifier="customer_details" id="G0g-0A-gJl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

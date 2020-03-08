@@ -52,6 +52,19 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
             let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
             self.navigationController?.pushViewController(loginVC, animated: true)
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           switch segue.identifier {
+           case "customer_details":
+               let customerDetailsController = segue.destination as! CustomerDetailsViewController
+               if let indexPath = self.tblCustomer.indexPathForSelectedRow {
+                   customerDetailsController.configureProductDescription(product: allProducts[indexPath.row])
+               }
+           default:
+               break
+           }
+       }
+    
     }
 
     
