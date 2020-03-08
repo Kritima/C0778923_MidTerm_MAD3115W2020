@@ -26,7 +26,7 @@ class CustomerAddViewController: UIViewController {
 
         self.navigationItem.title = "New Customer"
            self.navigationItem.hidesBackButton = true
-        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(CustomerAddViewController.back(sender:)))
+        let newBackButton = UIBarButtonItem(title: "Customers", style: UIBarButtonItem.Style.plain, target: self, action: #selector(CustomerAddViewController.back(sender:)))
            self.navigationItem.leftBarButtonItem = newBackButton
        }
         

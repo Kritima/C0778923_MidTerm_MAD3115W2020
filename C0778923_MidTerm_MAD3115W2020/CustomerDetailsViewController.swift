@@ -18,6 +18,7 @@ class CustomerDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Bill Details"
         //let customer = self.customerDetails {
          //   configureView(for: customer)
         }

@@ -114,7 +114,7 @@
                         <viewLayoutGuide key="safeArea" id="r6z-UM-ELD"/>
                     </view>
                     <navigationItem key="navigationItem" id="eTt-u2-XzH">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="cNj-fB-jn9"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add New Bill" id="cNj-fB-jn9"/>
                     </navigationItem>
                     <connections>
                         <outlet property="lblCustomerEmail" destination="opr-Wz-uOu" id="0Jb-fc-b4E"/>
@@ -153,6 +153,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-login-50" translatesAutoresizingMaskIntoConstraints="NO" id="tyi-SW-s0C">
+                                <rect key="frame" x="133" y="104" width="149" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -185,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ke0-lw-wXh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="131"/>
+            <point key="canvasLocation" x="808.69565217391312" y="130.58035714285714"/>
         </scene>
         <!--Customer Table View Controller-->
         <scene sceneID="LmV-8i-KPX">
@@ -243,7 +247,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="IVc-1j-ptw">
                             <connections>
-                                <segue destination="Vaw-nF-E0h" kind="show" id="f9L-8E-e8N"/>
+                                <segue destination="Vaw-nF-E0h" kind="show" id="WxJ-58-Nn5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -253,10 +257,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP5-UY-IdU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="131"/>
+            <point key="canvasLocation" x="1562" y="131"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-login-50" width="50" height="50"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>
