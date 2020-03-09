@@ -113,15 +113,73 @@
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vme-T0-uf3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6wJ-L1-SHD">
+                        <barButtonItem key="rightBarButtonItem" title="Add  New Bill" id="8nX-a0-9vI"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblCustomerEmail" destination="AgD-AQ-zAr" id="FCy-QC-4gQ"/>
                         <outlet property="lblCustomerId" destination="SSs-ck-Lh6" id="VWb-jB-gWw"/>
                         <outlet property="lblCustomerName" destination="JqB-jl-cjw" id="AlM-qX-RSJ"/>
+                        <segue destination="eRy-E6-F6o" kind="show" id="SRb-L7-XfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWc-F0-gvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3116" y="131"/>
+        </scene>
+        <!--Add Bill View Controller-->
+        <scene sceneID="Lx1-uN-md8">
+            <objects>
+                <viewController id="eRy-E6-F6o" customClass="AddBillViewController" customModule="C0778923_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kgi-QK-iLa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVi-YN-X59">
+                                <rect key="frame" x="16" y="143" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foz-bY-X73">
+                                <rect key="frame" x="16" y="229" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYN-BD-Ej1">
+                                <rect key="frame" x="16" y="317" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Total Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-28-Eun">
+                                <rect key="frame" x="16" y="402" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="foz-bY-X73" secondAttribute="trailing" constant="16" id="NWE-5O-x9g"/>
+                            <constraint firstItem="vVi-YN-X59" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="X6u-LS-vCv"/>
+                            <constraint firstItem="foz-bY-X73" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="asj-nE-ggl"/>
+                            <constraint firstItem="PYN-BD-Ej1" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="brl-yt-0pr"/>
+                            <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="DLV-28-Eun" secondAttribute="trailing" constant="16" id="gyo-f0-EAb"/>
+                            <constraint firstItem="DLV-28-Eun" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="ooe-Sd-RFZ"/>
+                            <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="vVi-YN-X59" secondAttribute="trailing" constant="16" id="qh5-YU-OKf"/>
+                            <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="PYN-BD-Ej1" secondAttribute="trailing" constant="16" id="uET-hT-SoL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kd8-KW-sth"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Zf-XM-3M6"/>
+                    <connections>
+                        <outlet property="txtfldBillAmount" destination="DLV-28-Eun" id="ufs-Vc-sy6"/>
+                        <outlet property="txtfldBillDate" destination="foz-bY-X73" id="RcN-lp-Gbq"/>
+                        <outlet property="txtfldBillId" destination="vVi-YN-X59" id="yRO-bA-DYK"/>
+                        <outlet property="txtfldBillType" destination="PYN-BD-Ej1" id="s3g-7h-AsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaY-ye-GW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3116" y="885"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="MmR-kp-kdB">
@@ -247,6 +305,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tblCustomer" destination="vaC-bi-OuH" id="17A-O5-c6g"/>
+                        <segue destination="0y8-zY-GAg" kind="show" id="vnz-1Z-pM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP5-UY-IdU" sceneMemberID="firstResponder"/>
