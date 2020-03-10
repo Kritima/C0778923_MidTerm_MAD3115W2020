@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA292DE9241720CB00635588 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA292DE8241720CB00635588 /* CardView.swift */; };
 		CA3571512410766F00ECEDD8 /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */; };
 		CA35719D2411C9D400ECEDD8 /* CustomerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA35719C2411C9D400ECEDD8 /* CustomerList.plist */; };
 		CA3571C1241210F500ECEDD8 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571C0241210F500ECEDD8 /* Customer.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA292DE8241720CB00635588 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CA3571502410766F00ECEDD8 /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		CA35719C2411C9D400ECEDD8 /* CustomerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CustomerList.plist; sourceTree = "<group>"; };
 		CA3571C0241210F500ECEDD8 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */,
 				CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */,
 				CA834BDA2416F02C003C5836 /* AddBillViewController.swift */,
+				CA292DE8241720CB00635588 /* CardView.swift */,
 			);
 			path = C0778923_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				CA3571C1241210F500ECEDD8 /* Customer.swift in Sources */,
 				CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */,
 				CA3571E724142C3D00ECEDD8 /* DataStorageSingleton.swift in Sources */,
+				CA292DE9241720CB00635588 /* CardView.swift in Sources */,
 				CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */,
 				CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */,
 				CA3571C32412120D00ECEDD8 /* CustomerDetailsViewController.swift in Sources */,

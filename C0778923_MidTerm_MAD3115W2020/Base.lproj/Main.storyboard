@@ -88,44 +88,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSs-ck-Lh6">
-                                <rect key="frame" x="16" y="188" width="382" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hydro" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-nq-3cQ">
+                                <rect key="frame" x="20" y="440" width="150" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-JZ-oRz">
+                                <rect key="frame" x="20" y="624" width="150" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWo-uf-a1i">
+                                <rect key="frame" x="244" y="624" width="150" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoH-kl-eg2">
+                                <rect key="frame" x="74" y="568" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqB-jl-cjw">
-                                <rect key="frame" x="16" y="262" width="382" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fr-T3-LF2">
+                                <rect key="frame" x="298" y="568" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-AQ-zAr">
-                                <rect key="frame" x="16" y="336" width="382" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Internet" translatesAutoresizingMaskIntoConstraints="NO" id="uFH-DF-uT6">
+                                <rect key="frame" x="244" y="440" width="150" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9w-4p-JtT">
+                                <rect key="frame" x="20" y="137" width="374" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94084686039999998" green="0.76363569499999995" blue="0.29000955820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="vme-T0-uf3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6wJ-L1-SHD">
                         <barButtonItem key="rightBarButtonItem" title="Add  New Bill" id="8nX-a0-9vI"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="lblCustomerEmail" destination="AgD-AQ-zAr" id="FCy-QC-4gQ"/>
-                        <outlet property="lblCustomerId" destination="SSs-ck-Lh6" id="VWb-jB-gWw"/>
-                        <outlet property="lblCustomerName" destination="JqB-jl-cjw" id="AlM-qX-RSJ"/>
                         <segue destination="eRy-E6-F6o" kind="show" id="SRb-L7-XfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWc-F0-gvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3116" y="131"/>
+            <point key="canvasLocation" x="3115.9420289855075" y="130.58035714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TIn-Ex-1CB">
+            <objects>
+                <viewController id="Uvw-dV-m5w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKq-Bq-cLm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mNW-J5-0Ky"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHd-RL-daj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="885"/>
         </scene>
         <!--Add Bill View Controller-->
         <scene sceneID="Lx1-uN-md8">
@@ -169,7 +195,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kd8-KW-sth"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3Zf-XM-3M6"/>
+                    <navigationItem key="navigationItem" id="3Zf-XM-3M6">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="mvG-Vs-Ypj"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtfldBillAmount" destination="DLV-28-Eun" id="ufs-Vc-sy6"/>
                         <outlet property="txtfldBillDate" destination="foz-bY-X73" id="RcN-lp-Gbq"/>
@@ -314,6 +342,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hydro" width="210" height="250"/>
+        <image name="Internet" width="185" height="250"/>
         <image name="icons8-login-50" width="50" height="50"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
