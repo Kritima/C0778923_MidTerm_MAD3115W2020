@@ -10,10 +10,10 @@ import UIKit
 
 class CustomerDetailsViewController: UIViewController {
     
+
     @IBOutlet weak var lblCustomerId: UILabel!
     @IBOutlet weak var lblCustomerName: UILabel!
     @IBOutlet weak var lblCustomerEmail: UILabel!
-    
     
     
     var customerId = ""
@@ -33,6 +33,7 @@ class CustomerDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     /*func configureProductDescription(customer: Customer){
               customerDetails = customer
               
@@ -47,7 +48,8 @@ class CustomerDetailsViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
+   
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
