@@ -290,7 +290,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mNW-J5-0Ky"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7MO-qG-2cQ"/>
+                    <navigationItem key="navigationItem" id="7MO-qG-2cQ">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="5yE-d9-2HQ">
+                            <connections>
+                                <action selector="btnHome:" destination="Uvw-dV-m5w" id="dXt-Bj-cyP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblBillDetail1" destination="8B4-vJ-bUT" id="poC-t0-HfA"/>
+                        <outlet property="lblBillDetail2" destination="zj0-nN-Chm" id="hKl-86-DCT"/>
+                        <outlet property="lblBillDetail3" destination="PQj-Jp-BwA" id="o8I-Wt-2od"/>
+                        <outlet property="lblBillDetail4" destination="ZX3-WS-oSQ" id="PKl-9X-u5b"/>
+                        <outlet property="lblBillDetail5" destination="DiE-RS-Kp8" id="z41-rg-lh4"/>
+                        <outlet property="lblBillDetail6" destination="WOA-Qb-FFS" id="u7S-6q-yvL"/>
+                        <outlet property="lblBillDetail7" destination="Qqa-c8-Ld0" id="FCd-SZ-Ynn"/>
+                        <outlet property="lblBillDetail8" destination="ep0-Os-ZTx" id="4ei-9B-jPH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHd-RL-daj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
