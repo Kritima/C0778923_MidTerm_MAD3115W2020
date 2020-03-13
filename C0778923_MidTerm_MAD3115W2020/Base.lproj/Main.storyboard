@@ -187,6 +187,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ivHydro" destination="sl2-nq-3cQ" id="TiI-km-kw9"/>
+                        <outlet property="ivInsurance" destination="hLU-CE-98N" id="s39-PA-lXh"/>
+                        <outlet property="ivInternet" destination="uFH-DF-uT6" id="dSv-qs-MFC"/>
+                        <outlet property="ivMobile" destination="iy7-Ui-pQ2" id="acC-Fy-Nc4"/>
                         <outlet property="lblCustomerEmail" destination="SDX-qa-Cwg" id="aZA-od-eV8"/>
                         <outlet property="lblCustomerId" destination="oiW-1R-lLm" id="PQg-RM-MFi"/>
                         <outlet property="lblCustomerName" destination="8xc-xA-o4K" id="cBJ-iu-z8o"/>

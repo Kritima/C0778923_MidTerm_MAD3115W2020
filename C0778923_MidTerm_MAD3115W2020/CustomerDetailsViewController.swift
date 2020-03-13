@@ -18,6 +18,14 @@ class CustomerDetailsViewController: UIViewController {
     @IBOutlet weak var viewCustomerEmail: UIView!
     @IBOutlet weak var lblCustomerEmail: UILabel!
     
+    @IBOutlet weak var ivHydro: UIImageView!
+    @IBOutlet weak var ivInternet: UIImageView!
+    @IBOutlet weak var ivMobile: UIImageView!
+    @IBOutlet weak var ivInsurance: UIImageView!
+    
+    
+    
+    
     var customerId = ""
     var customerName = ""
     var customerEmail = ""
@@ -28,7 +36,24 @@ class CustomerDetailsViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Bill Details"
         
-        viewCustomerId.
+   let tapGestureHydro = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedHydro(gesture:)))
+        
+let tapGestureInternet = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedInternet(gesture:)))
+        
+let tapGestureMobile = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedMobile(gesture:)))
+        
+        let tapGestureInsurance = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedInsurance(gesture:)))
+        
+        ivHydro.addGestureRecognizer(tapGestureHydro)
+        ivInternet.addGestureRecognizer(tapGestureInternet)
+        ivMobile.addGestureRecognizer(tapGestureMobile)
+        ivInsurance.addGestureRecognizer(tapGestureInsurance)
+        
+        ivHydro.isUserInteractionEnabled = true
+        ivInternet.isUserInteractionEnabled = true
+        ivMobile.isUserInteractionEnabled = true
+        ivInsurance.isUserInteractionEnabled = true
+        
         
         self.lblCustomerId.text = "Customer Id: \(customerId)"
         self.lblCustomerName.text = "Customer Name: \(customerName)"
@@ -36,6 +61,42 @@ class CustomerDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @objc func imageTappedHydro(gesture: UIGestureRecognizer) {
+                 // if the tapped view is a UIImageView then set it to imageview
+                 if (gesture.view as? UIImageView) != nil {
+                     print("Image Tapped")
+                     //Here you can initiate your new ViewController
+
+                 }
+             }
+    
+    @objc func imageTappedInternet(gesture: UIGestureRecognizer) {
+                 // if the tapped view is a UIImageView then set it to imageview
+                 if (gesture.view as? UIImageView) != nil {
+                     print("Image Tapped")
+                     //Here you can initiate your new ViewController
+
+                 }
+             }
+    
+    @objc func imageTappedMobile(gesture: UIGestureRecognizer) {
+                 // if the tapped view is a UIImageView then set it to imageview
+                 if (gesture.view as? UIImageView) != nil {
+                     print("Image Tapped")
+                     //Here you can initiate your new ViewController
+
+                 }
+             }
+    
+    @objc func imageTappedInsurance(gesture: UIGestureRecognizer) {
+                 // if the tapped view is a UIImageView then set it to imageview
+                 if (gesture.view as? UIImageView) != nil {
+                     print("Image Tapped")
+                     //Here you can initiate your new ViewController
+
+                 }
+             }
     
     
     /*func configureProductDescription(customer: Customer){
