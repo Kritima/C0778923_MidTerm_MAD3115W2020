@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddBillViewController: UIViewController, UITextFieldDelegate {
+class AddBillViewController: UIViewController, UITextFieldDelegate{
 
     
     @IBOutlet weak var txtfldBillId: UITextField!
@@ -19,18 +19,37 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
     var datePicker: UIDatePicker!
     var pickerView: UIPickerView!
     
+    var typeArray = ["Hydro", "Internet", "Mobile", "Insurance"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "New Bill"
         txtfldBillDate.delegate = self
-
+        txtfldBillType.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+               return 1
+           }
+
+           func pickerView( pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+               return typeArray.count
+           }
+
+           func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+            return typeArray[row]
+           }
+
+           func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+               txtfldBillType.text = typeArray[row]
+           }
+    
     
     func textFieldDidBeginEditing(_ textField: UITextField)
       {
         self.pickUpDate(self.txtfldBillDate)
-       // self.pickUpType(self.txtfldBillType)
+       self.pickUpType(self.txtfldBillType)
       }
       
       func pickUpDate(_ textField : UITextField)
@@ -50,23 +69,23 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
        
         //Adding Button ToolBar
        
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(AddBillViewController.doneClick))
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(AddBillViewController.doneClickDate))
        
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
        
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(AddBillViewController.cancelClick))
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(AddBillViewController.cancelClickDate))
        
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         textField.inputAccessoryView = toolBar
       }
     
-   /* func pickUpType(_ textField : UITextField)
+   func pickUpType(_ textField : UITextField)
     {
       self.pickerView = UIPickerView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 216))
-      self.pickerView.backgroundColor = UIColor.lightGray
-      self.datePir.datePickerMode = UIDatePicker.Mode.date
-      textField.inputView = self.datePicker
+      self.pickerView.backgroundColor = UIColor.white
+      textField.inputView = self.pickerView
+        
         
      
      
@@ -74,7 +93,7 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
       let toolBar = UIToolbar()
       toolBar.barStyle = .default
       toolBar.isTranslucent = true
-      toolBar.tintColor = .red//UIColor(red: 92/255, green: 216/255, blue 255/255, alpha : 1)
+      toolBar.tintColor = .gray//UIColor(red: 92/255, green: 216/255, blue 255/255, alpha : 1)
       toolBar.sizeToFit()
      
       //Adding Button ToolBar
@@ -88,9 +107,9 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
       toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
       toolBar.isUserInteractionEnabled = true
       textField.inputAccessoryView = toolBar
-    }*/
+    }
        
-      @objc func doneClick(){
+      @objc func doneClickDate(){
         let dateFormatter1 = DateFormatter()
         dateFormatter1.dateStyle = .medium
         dateFormatter1.timeStyle = .none
@@ -98,9 +117,18 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
         txtfldBillDate.resignFirstResponder()
       }
        
-      @objc func cancelClick(){
+      @objc func cancelClickDate(){
         txtfldBillDate.resignFirstResponder()
       }
+    
+    @objc func doneClick(){
+        //txtfldBillType.text = pickerView.text
+          txtfldBillType.resignFirstResponder()
+        }
+         
+        @objc func cancelClick(){
+          txtfldBillType.resignFirstResponder()
+        }
     }
 
 
