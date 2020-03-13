@@ -23,6 +23,11 @@ class CustomerDetailsViewController: UIViewController {
     @IBOutlet weak var ivMobile: UIImageView!
     @IBOutlet weak var ivInsurance: UIImageView!
     
+    var hydro = Int()
+    var mobile = Int()
+    var internet = Int()
+    var insurance = Int()
+    
     
     
     
@@ -34,6 +39,12 @@ class CustomerDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hydro = 1
+        mobile = 2
+        internet = 3
+        insurance = 4
+        
         self.navigationItem.title = "Customer's Bills"
         
         let tapGestureHydro = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedHydro(gesture:)))
@@ -70,7 +81,10 @@ class CustomerDetailsViewController: UIViewController {
             
             let hydroBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
             
+            hydroBillVC.hydroPassed = hydro
+            
             self.navigationController?.pushViewController(hydroBillVC, animated: true)
+            
             
         }
     }
@@ -82,6 +96,8 @@ class CustomerDetailsViewController: UIViewController {
             //Here you can initiate your new ViewController
             
             let internetBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
+            
+            internetBillVC.internetPassed = internet
             
             self.navigationController?.pushViewController(internetBillVC, animated: true)
             
@@ -95,6 +111,8 @@ class CustomerDetailsViewController: UIViewController {
             //Here you can initiate your new ViewController
             let mobileBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
             
+            mobileBillVC.mobilePassed = mobile
+            
             self.navigationController?.pushViewController(mobileBillVC, animated: true)
             
         }
@@ -107,6 +125,8 @@ class CustomerDetailsViewController: UIViewController {
             //Here you can initiate your new ViewController
             
             let insuranceBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
+            
+            insuranceBillVC.insurancePassed = insurance
             
             self.navigationController?.pushViewController(insuranceBillVC, animated: true)
             

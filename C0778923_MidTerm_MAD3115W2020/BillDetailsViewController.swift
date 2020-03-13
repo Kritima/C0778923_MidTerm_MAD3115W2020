@@ -21,6 +21,11 @@ class BillDetailsViewController: UIViewController {
     
     var allHydro = [Response.HydroBill]()
     
+    var hydroPassed = Int()
+    var mobilePassed = Int()
+    var internetPassed = Int()
+    var insurancePassed = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +45,15 @@ class BillDetailsViewController: UIViewController {
         self.navigationController?.pushViewController(tableVC, animated: true)
         
     }
+    
+    func calculateBillAmount(gbUsed: Int, mUsed: Int)-> Float {
+              var total : Float
+           let pricePerGb = 5
+           let pricePerMinue = 0.8
+              total=0.0
+           total = Float (pricePerGb) * Float (gbUsed) + Float(pricePerMinue) * Float (mUsed)
+              return total;
+          }
     /*
      // MARK: - Navigation
      

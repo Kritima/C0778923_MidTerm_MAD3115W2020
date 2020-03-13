@@ -28,6 +28,26 @@ class DataStorage
         self.customerList.append(customer)
     }
     
+    func addHydroBill(hydrobill: Response.HydroBill)
+    {
+        self.hydroBill.append(hydrobill)
+    }
+    
+    func addMobileBill(mobilebill: Response.MobileBill)
+       {
+           self.mobileBill.append(mobilebill)
+       }
+    
+    func addInternetBill(internetbill: Response.InternetBill)
+       {
+           self.internetBill.append(internetbill)
+       }
+    
+    func addInsuranceBill(insurancebill: Response.InsuranceBill)
+       {
+           self.insuranceBill.append(insurancebill)
+       }
+    
     func getAllCustomer() -> [Customer]
     {
         return self.customerList
@@ -37,6 +57,21 @@ class DataStorage
       {
           return self.hydroBill
       }
+    
+    func getAllInternetBill() -> [Response.InternetBill]
+    {
+        return self.internetBill
+    }
+    
+    func getAllMobileBill() -> [Response.MobileBill]
+    {
+        return self.mobileBill
+    }
+    
+    func getAllInsuranceBill() -> [Response.InsuranceBill]
+    {
+        return self.insuranceBill
+    }
     
     func loadData()
       {
@@ -56,6 +91,9 @@ class DataStorage
         let response = try? JSONDecoder().decode(Response.self, from: jsonData){
 
         hydroBill = response.hydrobills
+            mobileBill = response.mobilebills
+            internetBill = response.internetbills
+            insuranceBill = response.insurancebills
     }
 }
 }
