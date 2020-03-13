@@ -15,6 +15,7 @@
 		CA3571C32412120D00ECEDD8 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */; };
 		CA3571E724142C3D00ECEDD8 /* DataStorageSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */; };
 		CA53C927241B7D37005C07E5 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53C926241B7D37005C07E5 /* BillDetailsViewController.swift */; };
+		CA53C929241B8926005C07E5 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53C928241B8926005C07E5 /* Bill.swift */; };
 		CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819005240F1B6200F026E4 /* AppDelegate.swift */; };
 		CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819007240F1B6200F026E4 /* SceneDelegate.swift */; };
 		CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819009240F1B6200F026E4 /* LoginViewController.swift */; };
@@ -34,6 +35,7 @@
 		CA3571C22412120D00ECEDD8 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
 		CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageSingleton.swift; sourceTree = "<group>"; };
 		CA53C926241B7D37005C07E5 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		CA53C928241B8926005C07E5 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		CA819002240F1B6200F026E4 /* C0778923_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0778923_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA819005240F1B6200F026E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA819007240F1B6200F026E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				CA292DE8241720CB00635588 /* CardView.swift */,
 				CA292E0C2419B71300635588 /* CustomerTableViewCell.swift */,
 				CA53C926241B7D37005C07E5 /* BillDetailsViewController.swift */,
+				CA53C928241B8926005C07E5 /* Bill.swift */,
 			);
 			path = C0778923_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				CA81903E24106BE500F026E4 /* CustomerAddViewController.swift in Sources */,
 				CA53C927241B7D37005C07E5 /* BillDetailsViewController.swift in Sources */,
 				CA834BDB2416F02C003C5836 /* AddBillViewController.swift in Sources */,
+				CA53C929241B8926005C07E5 /* Bill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
