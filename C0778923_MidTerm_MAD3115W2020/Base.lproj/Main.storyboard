@@ -204,14 +204,14 @@
             </objects>
             <point key="canvasLocation" x="3115.9420289855075" y="130.58035714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Bill Details View Controller-->
         <scene sceneID="TIn-Ex-1CB">
             <objects>
-                <viewController id="Uvw-dV-m5w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="billsVC" id="Uvw-dV-m5w" customClass="BillDetailsViewController" customModule="C0778923_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HKq-Bq-cLm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.97610586880000005" green="0.75610214470000003" blue="0.12892010810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="mNW-J5-0Ky"/>
                     </view>
                     <navigationItem key="navigationItem" id="7MO-qG-2cQ"/>

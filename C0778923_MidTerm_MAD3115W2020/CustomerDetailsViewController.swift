@@ -10,7 +10,7 @@ import UIKit
 
 class CustomerDetailsViewController: UIViewController {
     
-
+    
     @IBOutlet weak var viewCustomerId: UIView!
     @IBOutlet weak var lblCustomerId: UILabel!
     @IBOutlet weak var viewCustomerName: UIView!
@@ -34,13 +34,13 @@ class CustomerDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Bill Details"
+        self.navigationItem.title = "Customer's Bills"
         
-   let tapGestureHydro = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedHydro(gesture:)))
+        let tapGestureHydro = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedHydro(gesture:)))
         
-let tapGestureInternet = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedInternet(gesture:)))
+        let tapGestureInternet = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedInternet(gesture:)))
         
-let tapGestureMobile = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedMobile(gesture:)))
+        let tapGestureMobile = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedMobile(gesture:)))
         
         let tapGestureInsurance = UITapGestureRecognizer(target: self, action: #selector(CustomerDetailsViewController.imageTappedInsurance(gesture:)))
         
@@ -58,69 +58,84 @@ let tapGestureMobile = UITapGestureRecognizer(target: self, action: #selector(Cu
         self.lblCustomerId.text = "Customer Id: \(customerId)"
         self.lblCustomerName.text = "Customer Name: \(customerName)"
         self.lblCustomerEmail.text = "Customer Email: \(customerEmail)"
-
+        
         // Do any additional setup after loading the view.
     }
     
     @objc func imageTappedHydro(gesture: UIGestureRecognizer) {
-                 // if the tapped view is a UIImageView then set it to imageview
-                 if (gesture.view as? UIImageView) != nil {
-                     print("Image Tapped")
-                     //Here you can initiate your new ViewController
-
-                 }
-             }
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("Image Tapped")
+            //Here you can initiate your new ViewController
+            
+            let hydroBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
+            
+            self.navigationController?.pushViewController(hydroBillVC, animated: true)
+            
+        }
+    }
     
     @objc func imageTappedInternet(gesture: UIGestureRecognizer) {
-                 // if the tapped view is a UIImageView then set it to imageview
-                 if (gesture.view as? UIImageView) != nil {
-                     print("Image Tapped")
-                     //Here you can initiate your new ViewController
-
-                 }
-             }
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("Image Tapped")
+            //Here you can initiate your new ViewController
+            
+            let internetBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
+            
+            self.navigationController?.pushViewController(internetBillVC, animated: true)
+            
+        }
+    }
     
     @objc func imageTappedMobile(gesture: UIGestureRecognizer) {
-                 // if the tapped view is a UIImageView then set it to imageview
-                 if (gesture.view as? UIImageView) != nil {
-                     print("Image Tapped")
-                     //Here you can initiate your new ViewController
-
-                 }
-             }
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("Image Tapped")
+            //Here you can initiate your new ViewController
+            let mobileBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
+            
+            self.navigationController?.pushViewController(mobileBillVC, animated: true)
+            
+        }
+    }
     
     @objc func imageTappedInsurance(gesture: UIGestureRecognizer) {
-                 // if the tapped view is a UIImageView then set it to imageview
-                 if (gesture.view as? UIImageView) != nil {
-                     print("Image Tapped")
-                     //Here you can initiate your new ViewController
-
-                 }
-             }
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("Image Tapped")
+            //Here you can initiate your new ViewController
+            
+            let insuranceBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
+            
+            self.navigationController?.pushViewController(insuranceBillVC, animated: true)
+            
+        }
+    }
     
     
     /*func configureProductDescription(customer: Customer){
-              customerDetails = customer
-              
-          }
-    
+     customerDetails = customer
+     
+     }
+     
      func configureView(for customer: Customer) {
-        self.lblCustomerId.text = customer.id
-        self.lblCustomerName.text = customer.name
-        self.lblCustomerEmail.text = customer.email
-        }*/
+     self.lblCustomerId.text = customer.id
+     self.lblCustomerName.text = customer.name
+     self.lblCustomerEmail.text = customer.email
+     }*/
     
     
-
+    
     /*
-   
+     
      // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

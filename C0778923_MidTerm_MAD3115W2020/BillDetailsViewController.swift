@@ -12,6 +12,8 @@ class BillDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Bill Details"
 
         // Do any additional setup after loading the view.
     }
