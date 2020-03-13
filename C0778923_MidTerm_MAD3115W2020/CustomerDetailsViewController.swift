@@ -27,6 +27,7 @@ class CustomerDetailsViewController: UIViewController {
     var mobile = Int()
     var internet = Int()
     var insurance = Int()
+    var customerCount = Int()
     
     
     
@@ -82,6 +83,7 @@ class CustomerDetailsViewController: UIViewController {
             let hydroBillVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "billsVC") as! BillDetailsViewController
             
             hydroBillVC.hydroPassed = hydro
+            hydroBillVC.customerCounting = customerCount
             
             self.navigationController?.pushViewController(hydroBillVC, animated: true)
             

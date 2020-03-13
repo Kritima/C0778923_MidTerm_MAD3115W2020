@@ -20,11 +20,15 @@ class BillDetailsViewController: UIViewController {
     @IBOutlet weak var lblBillDetail8: UILabel!
     
     var allHydro = [Response.HydroBill]()
+     var allMobile = [Response.MobileBill]()
+     var allInternet = [Response.InternetBill]()
+     var allInsurance = [Response.InsuranceBill]()
     
     var hydroPassed = Int()
     var mobilePassed = Int()
     var internetPassed = Int()
     var insurancePassed = Int()
+    var customerCounting = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +36,10 @@ class BillDetailsViewController: UIViewController {
         self.navigationItem.title = "Bill Details"
         
         allHydro = DataStorage.getInstance().getAllHydroBill()
-        
-        allHydro
+        allMobile = DataStorage.getInstance().getAllMobileBill()
+        allInternet = DataStorage.getInstance().getAllInternetBill()
+        allInsurance = DataStorage.getInstance().getAllInsuranceBill()
+        print(allHydro[customerCounting].id)
         
         // Do any additional setup after loading the view.
     }

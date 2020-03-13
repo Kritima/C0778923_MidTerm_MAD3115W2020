@@ -17,6 +17,7 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
     var allCustomers = [Customer]()
     var allCustomerNames = [Customer]()
     var searchController: UISearchController!
+    var customerCount = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,8 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
         detailsVC.customerName = self.allCustomers[indexPath.row].name
         detailsVC.customerId = self.allCustomers[indexPath.row].id
         detailsVC.customerEmail = self.allCustomers[indexPath.row].email
+        detailsVC.customerCount = indexPath.row
+        
         
         self.navigationController?.pushViewController(detailsVC, animated: true)
     

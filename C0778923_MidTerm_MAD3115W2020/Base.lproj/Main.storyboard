@@ -320,36 +320,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVi-YN-X59">
-                                <rect key="frame" x="16" y="143" width="382" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVi-YN-X59">
+                                <rect key="frame" x="16" y="140" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foz-bY-X73">
-                                <rect key="frame" x="16" y="229" width="382" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foz-bY-X73">
+                                <rect key="frame" x="16" y="226" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYN-BD-Ej1">
-                                <rect key="frame" x="16" y="317" width="382" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYN-BD-Ej1">
+                                <rect key="frame" x="16" y="312" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Total Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-28-Eun">
-                                <rect key="frame" x="16" y="402" width="382" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Total Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-28-Eun">
+                                <rect key="frame" x="16" y="398" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99962037800000003" green="0.74834251399999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="PYN-BD-Ej1" firstAttribute="top" secondItem="foz-bY-X73" secondAttribute="bottom" constant="52" id="0ax-7r-LGA"/>
+                            <constraint firstItem="DLV-28-Eun" firstAttribute="top" secondItem="PYN-BD-Ej1" secondAttribute="bottom" constant="52" id="HBM-A6-lnU"/>
                             <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="foz-bY-X73" secondAttribute="trailing" constant="16" id="NWE-5O-x9g"/>
                             <constraint firstItem="vVi-YN-X59" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="X6u-LS-vCv"/>
                             <constraint firstItem="foz-bY-X73" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="asj-nE-ggl"/>
                             <constraint firstItem="PYN-BD-Ej1" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="brl-yt-0pr"/>
+                            <constraint firstItem="vVi-YN-X59" firstAttribute="top" secondItem="kd8-KW-sth" secondAttribute="top" constant="52" id="gNA-cX-PMi"/>
                             <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="DLV-28-Eun" secondAttribute="trailing" constant="16" id="gyo-f0-EAb"/>
                             <constraint firstItem="DLV-28-Eun" firstAttribute="leading" secondItem="kd8-KW-sth" secondAttribute="leading" constant="16" id="ooe-Sd-RFZ"/>
                             <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="vVi-YN-X59" secondAttribute="trailing" constant="16" id="qh5-YU-OKf"/>
+                            <constraint firstItem="foz-bY-X73" firstAttribute="top" secondItem="vVi-YN-X59" secondAttribute="bottom" constant="52" id="r9j-uW-fje"/>
                             <constraint firstItem="kd8-KW-sth" firstAttribute="trailing" secondItem="PYN-BD-Ej1" secondAttribute="trailing" constant="16" id="uET-hT-SoL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kd8-KW-sth"/>

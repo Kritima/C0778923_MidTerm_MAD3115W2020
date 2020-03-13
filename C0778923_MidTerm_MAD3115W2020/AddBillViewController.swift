@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddBillViewController: UIViewController {
+class AddBillViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var txtfldBillId: UITextField!
@@ -22,6 +22,7 @@ class AddBillViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "New Bill"
+        txtfldBillDate.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -44,7 +45,7 @@ class AddBillViewController: UIViewController {
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
-        toolBar.tintColor = .red//UIColor(red: 92/255, green: 216/255, blue 255/255, alpha : 1)
+        toolBar.tintColor = .gray//UIColor(red: 92/255, green: 216/255, blue 255/255, alpha : 1)
         toolBar.sizeToFit()
        
         //Adding Button ToolBar
