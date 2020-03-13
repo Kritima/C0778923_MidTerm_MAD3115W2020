@@ -28,7 +28,7 @@ class CustomerDetailsViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Bill Details"
         
-        viewCustomerId.layoutSubviews()
+        viewCustomerId.
         
         self.lblCustomerId.text = "Customer Id: \(customerId)"
         self.lblCustomerName.text = "Customer Name: \(customerName)"
