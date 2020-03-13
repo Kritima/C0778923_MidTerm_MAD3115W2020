@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomerTableViewCell: UITableViewCell {
+/*class CustomerTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,4 +29,4 @@ class CustomerTableViewCell: UITableViewCell {
            self.ivPersonImage.image = check
        }
 
-}
+}*/

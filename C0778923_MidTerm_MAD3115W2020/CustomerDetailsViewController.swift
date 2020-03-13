@@ -11,10 +11,12 @@ import UIKit
 class CustomerDetailsViewController: UIViewController {
     
 
+    @IBOutlet weak var viewCustomerId: UIView!
     @IBOutlet weak var lblCustomerId: UILabel!
+    @IBOutlet weak var viewCustomerName: UIView!
     @IBOutlet weak var lblCustomerName: UILabel!
+    @IBOutlet weak var viewCustomerEmail: UIView!
     @IBOutlet weak var lblCustomerEmail: UILabel!
-    
     
     var customerId = ""
     var customerName = ""
@@ -25,6 +27,8 @@ class CustomerDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Bill Details"
+        
+        viewCustomerId.layoutSubviews()
         
         self.lblCustomerId.text = "Customer Id: \(customerId)"
         self.lblCustomerName.text = "Customer Name: \(customerName)"

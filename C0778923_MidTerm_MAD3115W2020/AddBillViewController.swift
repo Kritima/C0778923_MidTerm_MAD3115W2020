@@ -15,6 +15,7 @@ class AddBillViewController: UIViewController {
     @IBOutlet weak var txtfldBillDate: UITextField!
     @IBOutlet weak var txtfldBillType: UITextField!
     @IBOutlet weak var txtfldBillAmount: UITextField!
+    
     var datePicker: UIDatePicker!
     var pickerView: UIPickerView!
     

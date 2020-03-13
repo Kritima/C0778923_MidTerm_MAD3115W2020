@@ -15,15 +15,23 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
     @IBOutlet weak var tblCustomer: UITableView!
     
     var allCustomers = [Customer]()
+    var allCustomerNames = [Customer]()
+    var searchController: UISearchController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //self.setupSearchBar()
+
         self.navigationItem.title = "Customers"
         tblCustomer.delegate = self
         tblCustomer.dataSource = self
         allCustomers = DataStorage.getInstance().getAllCustomer()
+        
+        allCustomerNames = allCustomers
         // Do any additional setup after loading the view.
     }
+    
     
     func numberOfSections(in tableView : UITableView) -> Int{
         
@@ -56,7 +64,17 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
         
         
     }
+        
+        
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return UITableViewCell.EditingStyle.delete
+        }
+     
+        func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+            return true
+        }
     
+
     
     
     @IBAction func btnLogout(_ sender: UIBarButtonItem) {
@@ -80,5 +98,32 @@ class CustomerTableViewController: UIViewController, UITableViewDelegate,UITable
     
     
 }
+
+extension CustomerTableViewController: UISearchBarDelegate{
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+    }
+}
+
+/*extension CustomerTableViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text, !searchText.isEmpty {
+            allCustomers = allCustomerNames.filter { customer in
+                return customer.lowercased().contains(searchText.lowercased())
+            }
+            
+        } else {
+            allCustomers = allCustomerNames
+        }
+        tblCustomer.reloadData()
+    }
+
+}*/
 
 
