@@ -19,10 +19,16 @@ class BillDetailsViewController: UIViewController {
     @IBOutlet weak var lblBillDetail7: UILabel!
     @IBOutlet weak var lblBillDetail8: UILabel!
     
+    var allHydro = [Response.HydroBill]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "Bill Details"
+        
+        allHydro = DataStorage.getInstance().getAllHydroBill()
+        
+        allHydro
         
         // Do any additional setup after loading the view.
     }

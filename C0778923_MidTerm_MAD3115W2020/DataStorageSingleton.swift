@@ -12,6 +12,10 @@ class DataStorage
 {
     private static let instance = DataStorage()
     private lazy var customerList : [Customer] = []
+    private lazy var hydroBill : [Response.HydroBill] = []
+    private lazy var internetBill : [Response.InternetBill] = []
+    private lazy var mobileBill : [Response.MobileBill] = []
+    private lazy var insuranceBill : [Response.InsuranceBill] = []
     
     private init() {}
     
@@ -29,6 +33,11 @@ class DataStorage
         return self.customerList
     }
     
+    func getAllHydroBill() -> [Response.HydroBill]
+      {
+          return self.hydroBill
+      }
+    
     func loadData()
       {
         
@@ -42,12 +51,12 @@ class DataStorage
     
     func loadJson()
     {
-        let jsonData = jsonString.data(using: .utf8)!
-        let response = try! JSONDecoder().decode(Response.self, from: jsonData)
+        if let path = Bundle.main.path(forResource: "Bills", ofType: "json"),
+        let jsonData = path.data(using: .utf8),
+        let response = try? JSONDecoder().decode(Response.self, from: jsonData){
 
-        for user in response.users {
-            print(user.first_name)
-        }
+        hydroBill = response.hydrobills
     }
+}
 }
 

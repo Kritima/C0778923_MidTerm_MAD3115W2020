@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         print("Load Data")
       DataStorage.getInstance().loadData()
+        DataStorage.getInstance().loadJson()
+        print("Load Data")
         return true
     }
 

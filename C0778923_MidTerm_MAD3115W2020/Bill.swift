@@ -10,9 +10,8 @@ import Foundation
 
 struct Response: Codable
 {
-    var customerId: String
     
-    struct Bill: Codable {
+    struct HydroBill: Codable {
         var id: String
         var date: String
         var type: String
@@ -20,5 +19,35 @@ struct Response: Codable
         var unitConsumed: Int
     }
 
-    var bills:[Bill]
+    var hydrobills:[HydroBill]
+    
+    struct InternetBill: Codable {
+           var id: String
+           var date: String
+           var type: String
+           var providerName: String
+           var gbConsumed: Int
+       }
+    
+    var internetbills:[InternetBill]
+    
+    struct MobileBill: Codable {
+             var id: String
+             var date: String
+             var type: String
+             var providerName: String
+             var gbConsumed: Int
+         }
+      
+      var mobilebills:[MobileBill]
+    
+    struct InsuranceBill: Codable {
+               var id: String
+               var date: String
+               var type: String
+               var providerName: String
+               var gbConsumed: Int
+           }
+        
+        var insurancebills:[InsuranceBill]
 }
