@@ -39,5 +39,15 @@ class DataStorage
        }
         
     }
+    
+    func loadJson()
+    {
+        let jsonData = jsonString.data(using: .utf8)!
+        let response = try! JSONDecoder().decode(Response.self, from: jsonData)
+
+        for user in response.users {
+            print(user.first_name)
+        }
+    }
 }
 

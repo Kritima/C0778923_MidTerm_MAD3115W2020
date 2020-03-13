@@ -16,6 +16,7 @@
 		CA3571E724142C3D00ECEDD8 /* DataStorageSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */; };
 		CA53C927241B7D37005C07E5 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53C926241B7D37005C07E5 /* BillDetailsViewController.swift */; };
 		CA53C929241B8926005C07E5 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53C928241B8926005C07E5 /* Bill.swift */; };
+		CA53C92B241B8CF4005C07E5 /* Bills.json in Resources */ = {isa = PBXBuildFile; fileRef = CA53C92A241B8CF4005C07E5 /* Bills.json */; };
 		CA819006240F1B6200F026E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819005240F1B6200F026E4 /* AppDelegate.swift */; };
 		CA819008240F1B6200F026E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819007240F1B6200F026E4 /* SceneDelegate.swift */; };
 		CA81900A240F1B6200F026E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA819009240F1B6200F026E4 /* LoginViewController.swift */; };
@@ -36,6 +37,7 @@
 		CA3571E624142C3D00ECEDD8 /* DataStorageSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageSingleton.swift; sourceTree = "<group>"; };
 		CA53C926241B7D37005C07E5 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
 		CA53C928241B8926005C07E5 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		CA53C92A241B8CF4005C07E5 /* Bills.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Bills.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		CA819002240F1B6200F026E4 /* C0778923_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0778923_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA819005240F1B6200F026E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA819007240F1B6200F026E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				CA292E0C2419B71300635588 /* CustomerTableViewCell.swift */,
 				CA53C926241B7D37005C07E5 /* BillDetailsViewController.swift */,
 				CA53C928241B8926005C07E5 /* Bill.swift */,
+				CA53C92A241B8CF4005C07E5 /* Bills.json */,
 			);
 			path = C0778923_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA819012240F1B6300F026E4 /* LaunchScreen.storyboard in Resources */,
+				CA53C92B241B8CF4005C07E5 /* Bills.json in Resources */,
 				CA81900F240F1B6300F026E4 /* Assets.xcassets in Resources */,
 				CA35719D2411C9D400ECEDD8 /* CustomerList.plist in Resources */,
 				CA81900D240F1B6200F026E4 /* Main.storyboard in Resources */,

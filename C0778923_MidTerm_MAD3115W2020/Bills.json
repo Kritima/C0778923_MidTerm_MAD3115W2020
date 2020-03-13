@@ -1,0 +1,68 @@
+[
+    {
+        "hydrobill": [
+            {
+                "id": "HYDB0001",
+                "date": "Monday, 9 February, 2020",
+                "type": "Hydro"
+                "agencyname": "Planet Energy"
+                "unitconsumed": 29
+            },
+            {
+                "id": "HYDB0002",
+                "date": "Monday, 9 February, 2020",
+                "type": "Hydro"
+                "agencyname": "Bruce Power"
+                "unitconsumed": 29
+            }
+        ]
+        
+    },
+    {
+        "internetbill": [
+            {
+                "id": "INTB0001",
+                "date": "Monday, 9 February, 2020",
+                "type": "Internet"
+                "providername": "Rogers"
+                "unitconsumed": 500
+            },
+            {
+                "id": "INTB0002",
+                "date": "Monday, 9 February, 2020",
+                "type": "Internet"
+                "providername": "Rogers"
+                "unitconsumed": 500
+            }
+        ]
+    },
+    {
+        "mobilebills": [
+            {
+                "id": "MOBB0002",
+                "date": "Monday, 9 February, 2020",
+                "type": "Mobile"
+                "agencyname": "Apple Inc. iPhone X MAX+"
+                "planname": "LTE+3G 9.5GB Promo plan"
+                "mobilenumber": "9012345678
+                "gbused": 4
+                "minutesUsed": 230
+            }
+        ]
+    },
+    {
+        "insurancebills": [
+            {
+                "id": "INS0004",
+                "date": "Monday, 9 February, 2020",
+                "type": "Property"
+                "agencyname": "Aviva Canada Inc."
+                "startdate": "Monday, 9 February, 2020
+                "enddate":
+            }
+        ]
+    }
+]
+ 
+ 
+ 
